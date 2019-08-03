@@ -1,0 +1,29 @@
+'''
+Two balls are drawn at random in succession without replacement from an urn
+containing 4 red balls and 6 black balls.
+Find the probabilities of all the possible outcomes.
+'''
+
+* Total no. of balls in the urn is 4+6=10
+* Out of 10, there are 4 red balls and 6 black balls
+
+If we draw one ball at each random succession, then all possible events could be:
+
+1. Both red
+2. Red then Black
+3. Black then red
+4. Both Black
+
+If we pick one ball, then in 2nd trial, there will be 9 balls in the urn as we are not replacing the ball 
+which was picked at first event.
+
+so 
+1. The probability of both Red (RR) = (4/10) * (3/9) = 0.13332
+2. The probability of first Red and second Black (RB) = (4/10) * (6/9) = 0.2666
+3. The probability of first Black and second Red (BR) = (6/10) * (4/9) = 0.2666
+4. The probability of both Black (BB) = (6/10) * (5/9) = 0.3333
+
+Now we can say that :
+probability of both Red(RR) is 0.13332
+probability of either Red or Black(RB or BR) is 0.2666+0.2666 = 0.5332
+probability of both Black(BB) is 0.3333
